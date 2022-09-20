@@ -17,7 +17,7 @@ Notes
 Empty strings should return false when tested. */
 
 function isPinValid(pin) {
-    let validRe = /^\d{4,6}$/;
+    let validRe = /^(\d{4}|\d{6})$/;
     if (pin.match(validRe)) {
         return true;
     }
