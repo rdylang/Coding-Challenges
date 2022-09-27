@@ -5,14 +5,6 @@ A valid PIN has:
 - Only numeric characters (0-9).
 - No whitespace.
 
-Examples
-validate("121317") ➞ true
-validate("1234") ➞ true
-validate("45135") ➞ false
-validate("89abc1") ➞ false
-validate("900876") ➞ true
-validate(" 4983") ➞ false
-
 Notes
 Empty strings should return false when tested. */
 
@@ -23,3 +15,5 @@ function isPinValid(pin) {
     }
     return false;
 }
+
+module.exports = isPinValid;
